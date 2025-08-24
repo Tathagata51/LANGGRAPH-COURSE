@@ -1,20 +1,19 @@
 from dotenv import load_dotenv
 from langchain_core.tools import tool
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from langchain_tavily import TavilySearch
-
+from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 @tool
-def triple(num:float)->float:
-    '''
+def triple(num:float) -> float:
+    """
+    param num: a number to triple
+    returns: the triple of the input number
+    """
+    return float(num) * 3
 
-    :param num: a number to triple
-    :return:the triple of the input parameter
-    '''
+tools = [TavilySearch(max_results=1), triple]
 
-    return float(num)*3
-
-tools=[TavilySearch(max_result=1),triple]
-llm=ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0).bind_tools(tools)
-    
+#llm = ChatOpenAI(model="gpt-4o-mini", temperature=0).bind_tools(tools)
+llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0).bind_tools(tools)

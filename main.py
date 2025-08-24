@@ -34,5 +34,5 @@ app.get_graph().draw_mermaid_png(output_file_path="flow.png")
 
 if __name__ == "__main__":
     print("Hello ReAct LangGraph with Function Calling")
-    res = app.invoke({"messages": [HumanMessage(content="What is the temperature in Tokyo? List it and then triple it")]})
+    res = app.invoke({"messages": [HumanMessage(content="What is the temperature in Tokyo? List it and then triple it, then take the trippled value, multiply it with 7, use the value as year, and tell me a historiacl event from that year")]})
     print(res["messages"][LAST].content)

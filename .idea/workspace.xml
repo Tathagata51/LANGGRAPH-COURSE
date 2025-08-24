@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e25b3b05-d6c0-4379-821d-0eabf8a2b89a" name="Changes" comment="added nodes, edges, gnerated graph.png">
+    <list default="true" id="e25b3b05-d6c0-4379-821d-0eabf8a2b89a" name="Changes" comment="final working code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flow.png" beforeDir="false" afterPath="$PROJECT_DIR$/flow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react.py" beforeDir="false" afterPath="$PROJECT_DIR$/react.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +152,22 @@
       <option name="project" value="LOCAL" />
       <updated>1756067582897</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final working code">
+      <option name="closed" value="true" />
+      <created>1756073597483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756073597483</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added function calling" />
     <MESSAGE value="implemented agent reasoning" />
     <MESSAGE value="added nodes, edges, gnerated graph.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="added nodes, edges, gnerated graph.png" />
+    <MESSAGE value="final working code" />
+    <option name="LAST_COMMIT_MESSAGE" value="final working code" />
   </component>
 </project>
